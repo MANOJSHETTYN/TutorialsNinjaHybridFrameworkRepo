@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [TutorialsNinja AutomationSuite]" guice-stage="DEVELOPMENT" verbose="0">
+  <listeners>
+    <listener class-name="ty.com.tutorialsninja.listners.MyListners"/>
+  </listeners>
+  <test thread-count="5" name="TutorialsNinja Testcases(failed)" verbose="0">
+    <classes>
+      <class name="ty.com.TutorialsNinja.qa.testcases.SearchTest">
+        <methods>
+          <include name="verifySearchingWithNonExistingProduct"/>
+          <include name="tearDown"/>
+          <include name="verifySearchingWithExistingProduct"/>
+          <include name="startUp"/>
+          <include name="verifySearchingWithoutProvidingAnyProductName"/>
+        </methods>
+      </class> <!-- ty.com.TutorialsNinja.qa.testcases.SearchTest -->
+    </classes>
+  </test> <!-- TutorialsNinja Testcases(failed) -->
+</suite> <!-- Failed suite [TutorialsNinja AutomationSuite] -->
